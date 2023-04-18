@@ -1,18 +1,7 @@
 NetherBlade's Fun Fun for Everyone
 
-
-
-
-
-
-
-
-
-
-
-
-
-ABSOULUTE CRINGE NAME, BUT OK
 Link:
 
 https://netherblade6.github.io/FFFE/
+
+All credit goes to the site creater this is just a gateway is does not have games. Thank you Dr. Lemon for helping out with this project. 
