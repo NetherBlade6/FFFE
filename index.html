@@ -158,10 +158,14 @@
   <button class="mode" onclick="dark()" style="cursor: pointer;">Dark Mode</button>
 
 <script>
-  function dark() {
-    document.body.style.backgroundColor = "black";
-    document.body.style.color = "white";
-  }
+function dark()
+{
+var t = document.getElementById("myBtn");
+if(t.value=="ON"){
+      t.value="OFF";}
+elseif(t.value=="OFF"){
+      t.value="ON";}
+}
 </script>
 
 </html>
