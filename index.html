@@ -156,10 +156,8 @@
     <p><a href="about.html">About the creators of this page</a></p>
   </footer>
   
-  <button class="mode" onclick="dark()" style="cursor: pointer;">Dark Mode</button>
+  <button class="mode" onclick="toggle()" style="cursor: pointer;">Dark Mode</button>
 
-
-  <button class="mode" onclick="dark()" id="toggle" value="OFF" style="cursor: pointer;">Dark Mode</button>
 
 <script>
 function dark()
@@ -182,6 +180,28 @@ function light() {
   document.style.body.backgroundColor = "rgb(101, 255, 106)"
   document.style.body.color = "black"
 }
+</script>
+
+<script>
+   let active = false
+
+   function toggle() {
+          let toggle = document.querySelector('.toggle')
+          let text = document.querySelector('.text')
+          active = !active
+
+          if (active) {
+            toggle.classList.add('active')
+            text.innerHTML = 'dark'
+            document.style.body.backgroundColor = "black"
+            document.style.body.color = "white"
+          } else {
+            toggle.classList.remove('active')
+            text.innerHTML = 'light'
+            document.style.body.backgroundColor = 'rgb(101, 255, 106)'
+            document. style.body.color = 'white'
+          }
+        }
 </script>
 
 </html>
