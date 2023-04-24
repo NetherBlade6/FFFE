@@ -32,6 +32,11 @@
    background:#999;
 }
 
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
 /* IE 6 */
 * html #footer {
    position:absolute;
@@ -156,31 +161,15 @@
     <p><a href="about.html">About the creators of this page</a></p>
   </footer>
   
-  <button class="mode" onclick="mode()" style="cursor: pointer;">Dark Mode</button>
+  <button class="mode" onclick="dark()" style="cursor: pointer;">Dark Mode</button>
 
 
-<script>
-function mode()
-{
-var t = document.getElementById("toggle");
-if(value=="ON"){
-      value="OFF";
-    light();}
-elseif(value=="OFF"){
-      value="ON";
-    dark()}
-}
-
-function dark() {
-  document.style.body.backgroundColor = "black"
-  document.style.body.color = "white"
-}
-
-function light() {
-  document.style.body.backgroundColor = "rgb(101, 255, 106)"
-  document.style.body.color = "black"
-}
-</script>
+  <script>
+    function dark() {
+       var element = document.body;
+       element.classList.toggle("dark-mode");
+    }
+    </script>
 
 
 </html>
