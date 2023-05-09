@@ -18,7 +18,12 @@
     background-color: blue;
     color: rgb(0, 255, 8);
     transition: background-color 2s, color 5s;
-  
+  }
+
+  button:hover {
+    background-color: black;
+    color: white;
+  }
 
   #footer {
    position:fixed;
@@ -34,7 +39,35 @@
   color: white;
 }
 
+/* IE 6 */
+* html #footer {
+   position:absolute;
+   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
 
+
+   img {
+      height: 100%;
+      width: 100%;
+      animation: nether 3s linear forwards;
+   }
+
+   @keyframes nether {
+    0% {
+      width: 100%;
+      height: 100%;
+    }
+
+    100% {
+      width: 0;
+      height: 0;
+    }
+   }
+
+   .mode {
+    all: unset;
+    left: 0;
+    right: 100%;
+   }
 </style>
 
 
@@ -54,7 +87,7 @@
         <H2>Games</H2>
         <DL>
           <p>
-            <DT><a HREF="Unblocker.html" target="_blank" rel="noreferrer noopener">Unblocker coming soon...</a>
+            <DT><a HREF="MainUnblocker.html" target="_blank" rel="noreferrer noopener">Unblocker coming soon...</a>
             <DL>
               <DT><A HREF="https://www.lemonlemon.tk/" target="_blank" rel="noreferrer noopener">Lemon Gang (Dr. Lemon)</A>
               <DL>
@@ -148,7 +181,7 @@
   
   
   
-  <button class="mode" onclick="dark()" style:cursor: pointer;>Dark Mode</button>
+  <button class="mode" onclick="dark()" style="cursor: pointer;">Dark Mode</button>
 
 
   <script>
