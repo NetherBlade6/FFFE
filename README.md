@@ -4,4 +4,4 @@ Link:
 
 https://netherblade6.github.io/fffe/
 
-All credit goes to the site creater this is just a gateway is does not have games. Thank you Dr. Lemon for helping out with this project. 
+Also if you see this when you try to go to the page I am working on fixing it. 
